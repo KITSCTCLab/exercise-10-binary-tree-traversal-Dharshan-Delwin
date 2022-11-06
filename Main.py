@@ -4,7 +4,6 @@ class BinaryTreeNode:
         self.left_child = None
         self.right_child = None
 
-
 def insert(root, new_value) -> BinaryTreeNode:
     """If binary search tree is empty, make a new node, declare it as root and return the root.
         If tree is not empty and if new_value is less than value of data in root, add it to left subtree and proceed recursively.
@@ -32,15 +31,12 @@ def inorder(root) -> None:
     print(root.data,end = " ")
     inorder(root.right_child)
 
-
-
 def preorder(root) -> None:
     if(root is None):
         return
     print(root.data , end = " ")
     preorder(root.left_child)
     preorder(root.right_child)
-
 
 def postorder(root) -> None:
     if(root is None):
